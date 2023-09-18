@@ -362,9 +362,12 @@ public class GenDaoRunner{
 	}
 
 	private static final void printLogo() {
-		System.out.println(
+		final String ansiYellow = "\u001B[33m";
+		final String ansiReset = "\u001B[0m";
+		final String bold = "\u001B[1m";
+		System.out.println(ansiYellow + bold +
 			"\t _  _ _  __  _| _  _\n" +
 			"\t(_)(-| )    (_|(_|(_)\n" +
-			"\t_/ \n");
+			"\t_/ \n" + ansiReset);
 	}
 }
